@@ -1,5 +1,6 @@
 import { Battery, Fuel } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { cn } from "@/lib/utils";
 
 interface VehicleStatusCardProps {
   name: string;
