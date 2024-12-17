@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { useState } from "react";
 import Index from "./pages/Index";
 import MapView from "./pages/MapView";
+import Settings from "./pages/Settings";
 
 const App = () => {
   const [queryClient] = useState(() => new QueryClient());
@@ -19,6 +20,7 @@ const App = () => {
           <Routes>
             <Route path="/" element={<Index />} />
             <Route path="/map" element={<MapView />} />
+            <Route path="/settings" element={<Settings />} />
           </Routes>
         </BrowserRouter>
       </TooltipProvider>
